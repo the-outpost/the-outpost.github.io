@@ -1,0 +1,52 @@
+upstream wiki {
+	server 127.0.0.1:3000;
+}
+
+server {
+    listen 0.0.0.0:80 default_server;
+    server_name wiki.theoutpost.io;
+    access_log /var/log/nginx/wiki_access.log;
+    error_log /var/log/nginx/wiki_error.log;
+    # pass the request to the node.js server with the correct headers and much more can be added, see nginx config options
+
+    root /usr/share/nginx/html;
+    index index.html index.htm;
+
+    location /files {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                add_header 'Access-Control-Allow-Origin' '*';
+                add_header 'Access-Control-Allow-Credentials' 'true';
+                try_files $uri $uri/ =404;
+                # Uncomment to enable naxsi on this location
+                # include /etc/nginx/naxsi.rules
+    }
+
+
+    location / {
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header Host $http_host;
+      proxy_set_header X-NginX-Proxy true;
+      proxy_set_header X-Ssl off;
+
+      proxy_pass http://wiki/;
+      proxy_redirect off;
+      proxy_read_timeout 600; #seconds
+     
+      #rw - nginx.com/resources/admin-guide/caching/
+      proxy_ignore_headers Set-Cookie;
+      add_header Cache-Control public;
+      add_header 'X-Cache-Status' $upstream_cache_status;
+      
+      #NH Cache http://wiki.nginx.org/ReverseProxyCachingExample 
+      # http://nginx.com/resources/admin-guide/caching/
+      proxy_cache            wiki_cache;
+      #proxy_cache_valid 200 302 10m;
+      proxy_cache_valid 404 10m;
+      proxy_cache_valid any 10m;
+      proxy_cache_use_stale  error timeout invalid_header updating
+                             http_500 http_502 http_503 http_504;
+    }
+
+}
