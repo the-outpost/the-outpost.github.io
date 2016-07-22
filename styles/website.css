@@ -1,0 +1,144 @@
+.book.font-family-0 {
+    font-family: Baskerville, Georgia, serif;
+}
+
+.book-summary {
+    background: rgba(147,206,222,0.05);
+    background: -moz-linear-gradient(left, rgba(147,206,222,0.05) 0%, rgba(147,206,222,0.07) 38%, rgba(161,215,200,0.08) 49%, rgba(202,242,135,0.11) 81%, rgba(219,253,106,0.14) 95%, rgba(222,255,102,0.14) 97%, rgba(125,188,111,0.14) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,0.05)), color-stop(38%, rgba(147,206,222,0.07)), color-stop(49%, rgba(161,215,200,0.08)), color-stop(81%, rgba(202,242,135,0.11)), color-stop(95%, rgba(219,253,106,0.14)), color-stop(97%, rgba(222,255,102,0.14)), color-stop(100%, rgba(125,188,111,0.14)));
+    background: -webkit-linear-gradient(left, rgba(147,206,222,0.05) 0%, rgba(147,206,222,0.07) 38%, rgba(161,215,200,0.08) 49%, rgba(202,242,135,0.11) 81%, rgba(219,253,106,0.14) 95%, rgba(222,255,102,0.14) 97%, rgba(125,188,111,0.14) 100%);
+    background: -o-linear-gradient(left, rgba(147,206,222,0.05) 0%, rgba(147,206,222,0.07) 38%, rgba(161,215,200,0.08) 49%, rgba(202,242,135,0.11) 81%, rgba(219,253,106,0.14) 95%, rgba(222,255,102,0.14) 97%, rgba(125,188,111,0.14) 100%);
+    background: -ms-linear-gradient(left, rgba(147,206,222,0.05) 0%, rgba(147,206,222,0.07) 38%, rgba(161,215,200,0.08) 49%, rgba(202,242,135,0.11) 81%, rgba(219,253,106,0.14) 95%, rgba(222,255,102,0.14) 97%, rgba(125,188,111,0.14) 100%);
+    background: linear-gradient(to right, rgba(147,206,222,0.05) 0%, rgba(147,206,222,0.07) 38%, rgba(161,215,200,0.08) 49%, rgba(202,242,135,0.11) 81%, rgba(219,253,106,0.14) 95%, rgba(222,255,102,0.14) 97%, rgba(125,188,111,0.14) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#7dbc6f', GradientType=1 );
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+
+.site-heading {
+    background-image: url(/images/outpost-backgrounds/beach-doorway.png);
+    background-size: cover;
+    padding: 62px 0 20px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.site-name {
+    text-align: center;
+    font-family: Baskerville, Georgia, serif;
+    font-size: 2.7em;
+    font-weight: 500;
+    padding: 0 60px 18px;
+    color: #de4b00;
+}
+
+.book-header .btn {
+    font-size: 18px;
+}
+
+i.exc-trigger {
+    color: rgba(126, 188, 111, 0.3);
+    transition:.5s ease;
+}
+
+i.exc-trigger:hover {
+    color: rgba(126, 188, 111, 1);
+}
+
+.book-summary ul.summary li>a {
+    color: rgba(126, 188, 111, 1);
+    font-weight: 500;
+}
+
+.book-summary ul.summary li.active>a {
+    color: #de4b00;
+    font-weight: 600;
+}
+
+.markdown-section h1 {
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: .45em;
+    font-weight: 500;
+}
+
+.markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6 {
+    margin-bottom: .15em;
+    font-weight: 500;
+}
+
+.markdown-section a {
+    color: rgba(126, 188, 111, 1);
+}
+
+.markdown-section a.anchorjs-link:hover {
+    text-decoration: none;
+}
+
+.markdown-section a.anchorjs-link:active {
+    text-decoration: none;
+}
+
+#book-search-input {
+    background: none;
+    border: none;
+    padding: 0 52px;
+    margin: 0;
+}
+
+#book-search-input input {
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
+    padding: 3px 20px;
+}
+
+#book-search-input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+
+#book-search-input input::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+
+#book-search-input input:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+
+#book-search-input input:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+#book-search-input input:hover {
+    border: 1px solid rgba(126, 188, 111, 1);
+    padding: 3px 20px;
+}
+
+#book-search-input input:focus {
+    border: 1px solid rgba(126, 188, 111, 1);
+    padding: 3px 12px;
+    background: white;
+}
+
+#book-search-results .search-results .has-results .search-results-item a {
+    color: rgba(126, 188, 111, 1);
+}
+
+iframe {
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+}
+
+ul.two-column {
+    column-count: 2;
+    list-style-position: inside;
+}
+
+footer.welcome-footer {
+    border-top: 2px solid #e2e2e2;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+figure {
+    padding:10px;
+}
