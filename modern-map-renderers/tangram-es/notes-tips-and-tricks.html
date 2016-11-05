@@ -1,0 +1,809 @@
+
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Notes, Tips and Tricks · The Outpost</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="These are my notes I have taken as I study the code of Tangram ES.">
+        <meta name="generator" content="GitBook 3.0.3">
+        <meta name="keywords" content="Nick Hallahan,maps,GIS,Android,POSM,OpenMapKit,map renderers,Tangram">
+        <meta name="author" content="Nicholas Hallahan">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../leaflet/" />
+    
+    
+    <link rel="prev" href="tangram-android-sdk.html" />
+    
+
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            <div class="site-heading">
+                <div class="site-name">The Outpost</div>
+                
+                <div id="book-search-input" role="search">
+                    <form id="search-form">
+                        <input type="text" placeholder="Search The Outpost" />
+                    </form>
+                </div>
+                
+            </div>
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../openmapkit/">
+            
+                <a href="../../openmapkit/">
+            
+                    
+                    OpenMapKit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../openmapkit/android.html">
+            
+                <a href="../../openmapkit/android.html">
+            
+                    
+                    OpenMapKit Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../openmapkit/server.html">
+            
+                <a href="../../openmapkit/server.html">
+            
+                    
+                    OpenMapKit Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../posm/">
+            
+                <a href="../../posm/">
+            
+                    
+                    POSM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../posm/story.html">
+            
+                <a href="../../posm/story.html">
+            
+                    
+                    The Story
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../posm/hardware.html">
+            
+                <a href="../../posm/hardware.html">
+            
+                    
+                    Hardware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../posm/software.html">
+            
+                <a href="../../posm/software.html">
+            
+                    
+                    Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Tangram ES
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="mbtiles.html">
+            
+                <a href="mbtiles.html">
+            
+                    
+                    Offline MBTiles Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="osm-xml-data-source.html">
+            
+                <a href="osm-xml-data-source.html">
+            
+                    
+                    OSM XML Data Source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Android Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="jni.html">
+            
+                <a href="jni.html">
+            
+                    
+                    Android JNI Bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="tangram-android-sdk.html">
+            
+                <a href="tangram-android-sdk.html">
+            
+                    
+                    Tangram Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.1.6" data-path="notes-tips-and-tricks.html">
+            
+                <a href="notes-tips-and-tricks.html">
+            
+                    
+                    Notes, Tips and Tricks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../leaflet/">
+            
+                <a href="../../leaflet/">
+            
+                    
+                    Leaflet Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../resume/">
+            
+                <a href="../../resume/">
+            
+                    
+                    Résumé
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../wiki/">
+            
+                <a href="../../wiki/">
+            
+                    
+                    Wiki
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Notes, Tips and Tricks</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                            <div id="book-search-results">
+                                <div class="search-noresults">
+                                    <section class="normal markdown-section">
+                                    
+                                    <h1 id="notes-tips-and-tricks">Notes, Tips and Tricks</h1>
+<p>Here you can find some of the notes I have taken as I study the code of Tangram ES. If you need to dig deep into the code-base, these notes may be useful for you.</p>
+<h2 id="switching-between-mvt-and-geojson-tile-sources">Switching between MVT and GeoJSON tile sources</h2>
+<p>Press <code>G</code>.</p>
+<h4 id="maincpp"><a href="https://github.com/tangrams/tangram-es/blob/fd48ed73de4147620c2d811c6fbc3084f2cbb7d8/osx/src/main.cpp#L227-L240" _target="blank">main.cpp</a></h4>
+<pre><code class="lang-cpp"><span class="hljs-keyword">case</span> GLFW_KEY_G:
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> geoJSON = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">if</span> (!geoJSON) {
+        LOGS(<span class="hljs-string">&quot;Switching to GeoJSON data source&quot;</span>);
+        Tangram::queueSceneUpdate(<span class="hljs-string">&quot;sources.osm.type&quot;</span>, <span class="hljs-string">&quot;GeoJSON&quot;</span>);
+        Tangram::queueSceneUpdate(<span class="hljs-string">&quot;sources.osm.url&quot;</span>, <span class="hljs-string">&quot;https://vector.mapzen.com/osm/all/{z}/{x}/{y}.json&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        LOGS(<span class="hljs-string">&quot;Switching to MVT data source&quot;</span>);
+        Tangram::queueSceneUpdate(<span class="hljs-string">&quot;sources.osm.type&quot;</span>, <span class="hljs-string">&quot;MVT&quot;</span>);
+        Tangram::queueSceneUpdate(<span class="hljs-string">&quot;sources.osm.url&quot;</span>, <span class="hljs-string">&quot;https://vector.mapzen.com/osm/all/{z}/{x}/{y}.mvt&quot;</span>);
+    }
+    geoJSON = !geoJSON;
+    Tangram::applySceneUpdates();
+    <span class="hljs-keyword">break</span>;
+</code></pre>
+<h2 id="data">Data</h2>
+<p>Let&apos;s get started looking at the <code>src/data</code> directory. As you&apos;d imagine, this is where we handle data--data for a tile, data sources, and the overall structure in which the data is organized.</p>
+<p><a href="https://github.com/tangrams/tangram-es/blob/master/core/src/data/tileData.h" _target="blank">tileData.h</a> is the container for tile data. <a href="https://github.com/tangrams/tangram-es/blob/master/core/src/data/geoJsonSource.cpp" _target="blank">GeoJsonSource</a>, <a href="https://github.com/tangrams/tangram-es/blob/master/core/src/data/mvtSource.cpp" _target="blank">MVTSource</a>, and <a href="https://github.com/tangrams/tangram-es/blob/master/core/src/data/topoJsonSource.cpp" _target="blank">TopoJsonSource</a>. </p>
+<p><code>tileData.h</code> is a collection of 3 structs. </p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">struct</span> Feature {
+    Feature() {}
+    Feature(<span class="hljs-keyword">int32_t</span> _sourceId) { props.sourceId = _sourceId; }
+
+    GeometryType geometryType = GeometryType::polygons;
+
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;Point&gt; points;
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;Line&gt; lines;
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;Polygon&gt; polygons;
+
+    Properties props;
+};
+
+<span class="hljs-keyword">struct</span> Layer {
+
+    Layer(<span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; _name) : name(_name) {}
+
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> name;
+
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;Feature&gt; features;
+
+};
+
+<span class="hljs-keyword">struct</span> TileData {
+
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;Layer&gt; layers;
+
+};
+</code></pre>
+<p>Inside all of these sources, we add to the list of layers in the <code>tileData</code>. For example, in <a href="https://github.com/tangrams/tangram-es/blob/master/core/src/data/geoJsonSource.cpp#L53-L54" _target="blank">geoJsonSource.cpp</a> we do this:</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> layer = document.MemberBegin(); layer != document.MemberEnd(); ++layer) {
+    <span class="hljs-keyword">if</span> (GeoJson::isFeatureCollection(layer-&gt;value)) {
+        tileData-&gt;layers.push_back(GeoJson::getLayer(layer-&gt;value, projFn, m_id));
+        tileData-&gt;layers.back().name = layer-&gt;name.GetString();
+    }
+}
+</code></pre>
+<p>Looking at <a href="https://github.com/tangrams/tangram-es/blob/b11adf00bb2b47921982c4e7932b2bbc27a0f2ed/core/src/data/topoJsonSource.cpp#L55-L57" _target="blank">topoJsonSource.cpp</a>, we also do basically the same thing:</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> layer = objects.MemberBegin(); layer != objects.MemberEnd(); ++layer) {
+    tileData-&gt;layers.push_back(TopoJson::getLayer(layer, topology, m_id));
+}
+</code></pre>
+<p>Since <code>tileData</code> is really just struct containers, the creation of actual tileData is found in utility classes, as you see above. </p>
+<h2 id="creating-a-layer">Creating a Layer</h2>
+<p><code>GeoJson::getLayer</code> has a callback function fed to it called <code>projFn</code>. This function projects the LatLngs to points within the coordinate space of the tile. The exact same function is also used for <code>TopoJson::getLayer</code>.</p>
+<pre><code class="lang-cpp">BoundingBox tileBounds(_projection.TileBounds(task.tileId()));
+glm::dvec2 tileOrigin = {tileBounds.min.x, tileBounds.max.y*-1.0};
+double tileInverseScale = 1.0 / tileBounds.width();
+
+const auto projFn = [&amp;](glm::dvec2 _lonLat){
+    glm::dvec2 tmp = _projection.LonLatToMeters(_lonLat);
+    return Point {
+        (tmp.x - tileOrigin.x) * tileInverseScale,
+        (tmp.y - tileOrigin.y) * tileInverseScale,
+         0
+    };
+};
+</code></pre>
+<p>This <a href="https://github.com/tangrams/tangram-es/blob/b11adf00bb2b47921982c4e7932b2bbc27a0f2ed/core/src/data/tileData.h#L17-L22" _target="blank">coordinate space</a>, as you can see, is simple:</p>
+<pre><code>  (0.0, 1.0) ---------- (1.0, 1.0)
+            |          |             N
+            ^ +y       |          W &lt;|&gt; E
+            |          |             S
+            |    +x    |
+  (0.0, 0.0) -----&gt;---- (1.0, 0.0)
+</code></pre><p><code>TopoJson::getLayer</code> gets a topology object which has already had <a href="https://github.com/tangrams/tangram-es/blob/b11adf00bb2b47921982c4e7932b2bbc27a0f2ed/core/src/data/topoJsonSource.cpp#L49" _target="blank">points within the topology projected</a>.</p>
+<h2 id="layers-and-styles">Layers and Styles</h2>
+<p>Being that we have layers in tile data, we need to study how they are styled and rendered as specified in <code>scene.yml</code>.</p>
+<p><a href="https://github.com/tangrams/tangram-es/blob/b11adf00bb2b47921982c4e7932b2bbc27a0f2ed/core/src/tile/tileTask.cpp#L19" _target="blank">TileData is created</a> by TileTask in <code>TileTask::process</code>.</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">void</span> TileTask::process(TileBuilder&amp; _tileBuilder) {
+
+    <span class="hljs-keyword">auto</span> tileData = m_source-&gt;parse(*<span class="hljs-keyword">this</span>, *_tileBuilder.scene().mapProjection());
+
+    <span class="hljs-keyword">if</span> (tileData) {
+        m_tile = _tileBuilder.build(m_tileId, *tileData, *m_source);
+    } <span class="hljs-keyword">else</span> {
+        cancel();
+    }
+}
+</code></pre>
+<h3 id="tilebuilder">TileBuilder</h3>
+<p><a href="https://github.com/tangrams/tangram-es/blob/b11adf00bb2b47921982c4e7932b2bbc27a0f2ed/core/src/tile/tileBuilder.h" _target="blank">TileBuilder.h</a> is the class where we build the actual tile from the tile data with the <code>StyleBuilder</code>.</p>
+<p><code>TileBuilder::build</code> is the primary member function we care about that returns a <code>Tile</code>.</p>
+<pre><code class="lang-cpp"><span class="hljs-built_in">std</span>::<span class="hljs-built_in">shared_ptr</span>&lt;Tile&gt; TileBuilder::build(TileID _tileID, <span class="hljs-keyword">const</span> TileData&amp; _tileData, <span class="hljs-keyword">const</span> DataSource&amp; _source) {
+
+    <span class="hljs-keyword">auto</span> tile = <span class="hljs-built_in">std</span>::make_shared&lt;Tile&gt;(_tileID, *m_scene-&gt;mapProjection(), &amp;_source);
+
+    tile-&gt;initGeometry(m_scene-&gt;styles().size());
+
+    m_styleContext.setKeywordZoom(_tileID.s);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span>&amp; builder : m_styleBuilder) {
+        <span class="hljs-keyword">if</span> (builder.second)
+            builder.second-&gt;setup(*tile);
+    }
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> <span class="hljs-keyword">auto</span>&amp; datalayer : m_scene-&gt;layers()) {
+
+        <span class="hljs-keyword">if</span> (datalayer.source() != _source.name()) { <span class="hljs-keyword">continue</span>; }
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> <span class="hljs-keyword">auto</span>&amp; collection : _tileData.layers) {
+
+            <span class="hljs-keyword">if</span> (!collection.name.empty()) {
+                <span class="hljs-keyword">const</span> <span class="hljs-keyword">auto</span>&amp; dlc = datalayer.collections();
+                <span class="hljs-keyword">bool</span> layerContainsCollection =
+                    <span class="hljs-built_in">std</span>::find(dlc.begin(), dlc.end(), collection.name) != dlc.end();
+
+                <span class="hljs-keyword">if</span> (!layerContainsCollection) { <span class="hljs-keyword">continue</span>; }
+            }
+
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> <span class="hljs-keyword">auto</span>&amp; feat : collection.features) {
+                m_ruleSet.apply(feat, datalayer, m_styleContext, *<span class="hljs-keyword">this</span>);
+            }
+        }
+    }
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span>&amp; builder : m_styleBuilder) {
+        tile-&gt;setMesh(builder.second-&gt;style(), builder.second-&gt;build());
+    }
+
+    <span class="hljs-keyword">return</span> tile;
+}
+</code></pre>
+<p>This build is done during <a href="https://github.com/tangrams/tangram-es/blob/b11adf00bb2b47921982c4e7932b2bbc27a0f2ed/core/src/tile/tileTask.cpp#L22" _target="blank">TileTask::process</a>.</p>
+<p>Note that <code>builder.second</code> is getting the value (as opposed to the key) of the <code>m_styleBuilder</code>, which is a hash map implemented via a class called <a href="https://github.com/tangrams/tangram-es/blob/b11adf00bb2b47921982c4e7932b2bbc27a0f2ed/core/src/util/fastmap.h" _target="blank"><code>fastmap</code></a>.</p>
+<h2 id="sceneyaml">scene.yaml</h2>
+<p>The most general-purpose, and useful (in my opinion) style file we have is the Cinnabar style. The <a href="https://tangrams.github.io/carousel/styles/cinnabar-style.yaml" _target="blank">scene.yaml for Cinnabar</a> is pretty long and extensive, and this is my main reference for seeing how to do in-depth styling.</p>
+<p>Mapzen has good documentation explaining <a href="https://mapzen.com/documentation/tangram/Scene-file/" _target="blank">how the scene file works</a>.</p>
+<h3 id="loading-sceneyml">Loading scene.yml</h3>
+<p><a href="https://github.com/tangrams/tangram-es/blob/b11adf00bb2b47921982c4e7932b2bbc27a0f2ed/scenes/scene.yaml" _target="blank">scene.yaml</a> is loaded by <code>void loadScene(const char* _scenePath)</code>. This is called explicity as well as in <code>void initialize(const char* _scenePath)</code>.</p>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loadScene</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* _scenePath)</span> </span>{
+    LOG(<span class="hljs-string">&quot;Loading scene file: %s&quot;</span>, _scenePath);
+
+    <span class="hljs-keyword">auto</span> sceneString = stringFromFile(setResourceRoot(_scenePath).c_str(), PathType::resource);
+
+    <span class="hljs-comment">// Copy old scene</span>
+    <span class="hljs-keyword">auto</span> scene = <span class="hljs-built_in">std</span>::make_shared&lt;Scene&gt;(*m_scene);
+
+    <span class="hljs-keyword">if</span> (SceneLoader::loadScene(sceneString, *scene)) {
+        setScene(scene);
+    }
+}
+</code></pre>
+<p>This non-class function in turn calls <a href="https://github.com/tangrams/tangram-es/blob/b11adf00bb2b47921982c4e7932b2bbc27a0f2ed/core/src/scene/sceneLoader.cpp#L48-L57" _target="blank"><code>SceneLoader::loadScene</code></a>, and then the resultant scene object is set. The scene.yaml is loaded in <a href="https://github.com/tangrams/yaml-cpp/blob/master/src/parse.cpp" _target="blank">parse.cpp</a> within the <a href="https://github.com/tangrams/tangram-es/blob/a7d7494aa8ee464872629b352f112782e25bf49e/.gitmodules#L22-L24" _target="blank">yaml-cpp submodule</a>. The <a href="https://github.com/tangrams/yaml-cpp" _target="blank">yaml-cpp</a> project is maintained by Mapzen tangrams. The actual loading is making a new root node object of the YAML document. It appears that yaml-cpp is a DOM style parser.</p>
+<h3 id="applying-sceneyaml">Applying scene.yaml</h3>
+<p>Once we have loaded <code>scene.yaml</code>, we need to apply it.</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> SceneLoader::loadScene(<span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&amp; _sceneString, Scene&amp; _scene) {
+
+    Node&amp; root = _scene.config();
+
+    <span class="hljs-keyword">if</span> (loadConfig(_sceneString, root)) {
+        applyConfig(root, _scene);
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+}
+</code></pre>
+<p><a href="https://github.com/tangrams/tangram-es/blob/a7d7494aa8ee464872629b352f112782e25bf49e/core/src/scene/sceneLoader.cpp#L152-L270" _target="blank"><code>SceneLoader::applyConfig</code></a> is a long member function that does all of the work of setting up the <a href="https://github.com/tangrams/tangram-es/blob/a7d7494aa8ee464872629b352f112782e25bf49e/core/src/scene/scene.h" _target="blank">Scene</a> object. This function is paricularly relevent, because you can see how the yaml file is read and used to setup the scene object. It goes through all of the top-level scene elements, and these elements are specified in the <a href="https://mapzen.com/documentation/tangram/Scene-file/#top-level-elements" _target="blank">Scene File documentation</a>.</p>
+<h3 id="loading-a-source">Loading a Source</h3>
+<p><a href="https://github.com/tangrams/tangram-es/blob/a7d7494aa8ee464872629b352f112782e25bf49e/core/src/scene/sceneLoader.cpp#L705-L784" _target="blank"><code>SceneLoader::loadSource</code></a> is where we setup our data sources. The documentation states that data sources can be tiled or non-tiled. In specfic, we can see that this support only applies currently for GeoJSON. If we are to make an OSM_XML source type, we&apos;ll want to follow the same mechanism for accepting tiled and non-tiled OSM sources.</p>
+<h2 id="label-placement">Label Placement</h2>
+<p><a href="https://mapzen.com/documentation/tangram/Filters-Overview/#label_placement" _target="blank">https://mapzen.com/documentation/tangram/Filters-Overview/#label_placement</a></p>
+<h2 id="fetching-tiles">Fetching Tiles</h2>
+<h3 id="view"><a href="https://github.com/tangrams/tangram-es/blob/f1ef7d16ee07b58b696bdbf6b47e941889b32961/core/src/view/view.h" _target="blank">View</a></h3>
+<p>The <code>View</code> is an object that represents the state of the viewport of the map. The view contains the set of visible tiles, and we call <a href="https://github.com/tangrams/tangram-es/blob/f1ef7d16ee07b58b696bdbf6b47e941889b32961/core/src/view/view.h#L157" _target="blank"><code>View::getVisibleTiles</code></a> to get this information.</p>
+<h3 id="tangramh"><a href="https://github.com/tangrams/tangram-es/blob/f1ef7d16ee07b58b696bdbf6b47e941889b32961/core/src/tangram.h" _target="blank">tangram.h</a></h3>
+<p><a href="https://github.com/tangrams/tangram-es/blob/f1ef7d16ee07b58b696bdbf6b47e941889b32961/core/src/tangram.cpp" _target="blank">tangram.cpp</a> is the primary API, and this is where <code>View::getVisibleTiles</code> is called. There is a <code>bool update(float _dt)</code> function that is called in a tight loop by the main function of the application. In this function, we call:</p>
+<pre><code class="lang-cpp">m_tileManager-&gt;updateTileSets(viewState, m_view-&gt;getVisibleTiles());
+</code></pre>
+<p>In the OS X GLFW application, <code>bool update</code> is called within</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">while</span> (keepRunning &amp;&amp; !glfwWindowShouldClose(main_window)) {
+    ...
+    Tangram::update(delta);
+    Tangram::render();
+    ...
+}
+</code></pre>
+<p>It is exposed to Android in the JNI.</p>
+<pre><code class="lang-cpp"><span class="hljs-function">JNIEXPORT <span class="hljs-keyword">bool</span> JNICALL <span class="hljs-title">Java_com_mapzen_tangram_MapController_nativeUpdate</span><span class="hljs-params">(JNIEnv* jniEnv, jobject obj, jfloat dt)</span> </span>{
+    <span class="hljs-keyword">return</span> Tangram::update(dt);
+}
+</code></pre>
+<h3 id="tilemanager"><a href="https://github.com/tangrams/tangram-es/blob/f1ef7d16ee07b58b696bdbf6b47e941889b32961/core/src/tile/tileManager.h" _target="blank">TileManager</a></h3>
+<blockquote>
+<p>Singleton container of TileSets. TileManager is a singleton that maintains a set of Tiles based on the current view into the map.</p>
+</blockquote>
+<p>The <code>TileManager</code> is instantiated one time in the setup of the app in <a href="https://github.com/tangrams/tangram-es/blob/f1ef7d16ee07b58b696bdbf6b47e941889b32961/core/src/tangram.cpp#L83" _target="blank">tangram.cpp</a></p>
+<pre><code class="lang-cpp">m_tileManager = <span class="hljs-built_in">std</span>::make_unique&lt;TileManager&gt;(*m_tileWorker);
+</code></pre>
+<h4 id="updatetilesets">updateTileSets</h4>
+<p>Since <a href="https://github.com/tangrams/tangram-es/blob/bda96bbe33146974be96785b0fd39182451e463a/core/src/tile/tileManager.cpp#L118-L138" _target="blank"><code>TileManager::updateTileSets</code></a> is called repeatedly by <code>Tangram::update</code>, this is a good first member function to look at.</p>
+<p>First, it loops through all of the tile sets and updates them. <a href="https://github.com/tangrams/tangram-es/blob/bda96bbe33146974be96785b0fd39182451e463a/core/src/tile/tileManager.cpp#L140-L340" _target="blank"><code>TileManager::updateTileSet</code></a> is a long and involved function. Several activities include: unsetting proxies, making sure all visible tiles are in the <code>TileSet</code>, prioritizing the tile to be loaded based on the distance from the center of the map, and making sure the download requests does not exceed the limit of downloads.</p>
+<p>Then, <a href="https://github.com/tangrams/tangram-es/blob/bda96bbe33146974be96785b0fd39182451e463a/core/src/tile/tileManager.cpp#L403-L439" _target="blank"><code>TileManager::loadTiles</code></a> is called. Here, we create the tasks, and we call</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">if</span> (tileSet.source-&gt;loadTileData(<span class="hljs-built_in">std</span>::move(task), m_dataCallback)) {
+    ...
+}
+</code></pre>
+<p><a href="https://github.com/hallahan/tangram-es/blob/OSM_XML/core/src/data/dataSource.cpp#L171-L174" _target="blank"><code>DataSource::loadTileData</code></a> is the actual place where the HTTP request is made. <code>startUrlRequest</code> is a platform wrapper function that has your specific platform make the HTTP request.</p>
+<pre><code class="lang-cpp">bool DataSource::loadTileData(std::shared_ptr&lt;TileTask&gt;&amp;&amp; _task, TileTaskCb _cb) {
+
+    std::string url(constructURL(_task-&gt;tileId()));
+
+    // lambda captured parameters are const by default, we want &quot;task&quot; (moved) to be non-const,
+    // hence &quot;mutable&quot;
+    // Refer: http://en.cppreference.com/w/cpp/language/lambda
+    return startUrlRequest(url,
+            [this, _cb, task = std::move(_task)](std::vector&lt;char&gt;&amp;&amp; rawData) mutable {
+                this-&gt;onTileLoaded(std::move(rawData), std::move(task), _cb);
+            });
+
+}
+</code></pre>
+<h3 id="tileworker">TileWorker</h3>
+<p><a href="https://github.com/tangrams/tangram-es/blob/ce2ff32f4265c88e1bd4360ea34b15634e8b2309/core/src/tile/tileWorker.cpp][`TileWorker::run`](https://github.com/tangrams/tangram-es/blob/ce2ff32f4265c88e1bd4360ea34b15634e8b2309/core/src/tile/tileWorker.cpp" _target="blank"><code>TileWorker</code></a> is the wrapper for a thread that does the work of fetching a tile. The worker is constructed with a <code>TileBuilder</code> and a <code>std::thread</code>. This is done once during the setup of the app in <a href="https://github.com/tangrams/tangram-es/blob/f1ef7d16ee07b58b696bdbf6b47e941889b32961/core/src/tangram.cpp#L80" _target="blank"><code>Tangram::initialize</code></a>. </p>
+<pre><code class="lang-cpp">m_tileWorker = <span class="hljs-built_in">std</span>::make_unique&lt;TileWorker&gt;(MAX_WORKERS);
+</code></pre>
+<p>A lot happens in <a href="https://github.com/tangrams/tangram-es/blob/ce2ff32f4265c88e1bd4360ea34b15634e8b2309/core/src/tile/tileWorker.cpp#L46-L119" _target="blank"><code>TileWorker::run</code></a>. It takes the member <code>m_mutex</code> and creates a lock. It handles all of the tasks and removes them from the queue when necessary. There is a priority mechanism for removing the correct tile from the queue. Finally, it calls <code>TileTask::process</code>.</p>
+<blockquote>
+<p>TODO: Figure out where <code>TileWorker::run</code> is called.</p>
+</blockquote>
+<h3 id="tiletask">TileTask</h3>
+<p><a href="https://github.com/tangrams/tangram-es/blob/ce2ff32f4265c88e1bd4360ea34b15634e8b2309/core/src/tile/tileTask.cpp#L17-L26" _target="blank">TileTask::process</a> takes <code>TileBuilder</code> and calls <code>GeoJsonSource::parse</code>.</p>
+<h3 id="geojsonsource">GeoJsonSource</h3>
+<p><code>GeoJsonSource</code> is constructed in <a href="https://github.com/tangrams/tangram-es/blob/ce2ff32f4265c88e1bd4360ea34b15634e8b2309/core/src/scene/sceneLoader.cpp#L864" _target="blank"><code>SceneLoader::loadSource</code></a>. This happens once.</p>
+<p><a href="https://github.com/tangrams/tangram-es/blob/ce2ff32f4265c88e1bd4360ea34b15634e8b2309/core/src/data/geoJsonSource.cpp#L17-L64" _target="blank"><code>GeoJsonSource::parse</code></a> is the final stage where we create <code>TileData</code> from a <code>TileTask</code>. This is done for each and every tile.</p>
+
+                                    
+                                    </section>
+                                </div>
+                                <div class="search-results">
+                                    <div class="has-results">
+                                        
+                                        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+                                        <ul class="search-results-list"></ul>
+                                        
+                                    </div>
+                                    <div class="no-results">
+                                        
+                                        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tangram-android-sdk.html" class="navigation navigation-prev " aria-label="Previous page: Tangram Android SDK">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../leaflet/" class="navigation navigation-next " aria-label="Next page: Leaflet Plugins">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        // fix for detecting taps on book body for mobile and narrow screen
+        function mobileSidebarCloseFix() {
+            function checkToToggle(e) {
+                if ($(window).width() <= 600 
+                        && e.target.tagName !== 'I'
+                        && e.target.tagName !== 'A'
+                        && gitbook.sidebar.isOpen()) {
+                    gitbook.sidebar.toggle();
+                }
+            }
+            $bookbody = $('.book-body');
+            $bookbody.click(function(e) {
+                checkToToggle(e);
+            });
+            $bookbody.on('touchend', function(e) {
+                checkToToggle(e);
+            });
+        }
+
+        // make keyboard disappear when pressing go or enter when typing
+        // in search input. fix for mobile behavior.
+        function searchInputMobileFix() {
+            $('#search-form').submit(function(e) {
+                e.preventDefault();
+                if(document.activeElement) {
+                    document.activeElement.blur();
+                    if ($(window).width() <= 600 && gitbook.sidebar.isOpen()) {
+                        gitbook.sidebar.toggle();
+                    }
+                }
+            });
+        }
+
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"These are my notes I have taken as I study the code of Tangram ES.","title":"Notes, Tips and Tricks","level":"4.1.6","depth":2,"next":{"title":"Leaflet Plugins","level":"5.1","depth":1,"path":"leaflet/index.md","ref":"leaflet/index.md","articles":[]},"previous":{"title":"Tangram Android SDK","level":"4.1.5","depth":2,"path":"modern-map-renderers/tangram-es/tangram-android-sdk.md","ref":"modern-map-renderers/tangram-es/tangram-android-sdk.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchorjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"serif","size":2},"expandable-chapters":{},"anchorjs":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas Hallahan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"modern-map-renderers/tangram-es/notes-tips-and-tricks.md","mtime":"2016-11-04T21:39:10.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-11-05T02:59:40.537Z"},"basePath":"../..","book":{"language":""}});
+            mobileSidebarCloseFix();
+            searchInputMobileFix();
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
