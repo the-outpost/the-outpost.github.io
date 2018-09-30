@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.0.3">
+        <meta name="generator" content="GitBook 3.2.3">
         <meta name="keywords" content="Nick Hallahan,maps,GIS,Android,POSM,OpenMapKit,map renderers,Tangram">
         <meta name="author" content="Nicholas Hallahan">
         
@@ -435,31 +435,31 @@
                                     
                                     <p><img src="../images/posm/logo-full.png" alt="POSM" style="max-width:500px;display:block;margin-left: auto;margin-right: auto;"></p>
 <p>POSM allows large groups of people to edit OpenStreetMap fully disconnected from the internet. It is the integration of a suite of open source tools on a small, portable server that broadcasts a wifi hotspot.</p>
-<p>Initially, POSM was a project for the <a href="https://americanredcross.github.io/" _target="blank">American Red Cross GIS team</a> to enable the <a href="http://www.missingmaps.org/" _target="blank">Missing Maps</a> field enumeration and mapathon workflow in an offline environment. The <a href="story.html">background story</a> stems from the effort to integrate OpenMapKit with Field Papers, and the result went a step further by also providing the OpenStreetMap software stack on our offline server.</p>
+<p>Initially, POSM was a project for the <a href="https://americanredcross.github.io/" target="_blank">American Red Cross GIS team</a> to enable the <a href="http://www.missingmaps.org/" target="_blank">Missing Maps</a> field enumeration and mapathon workflow in an offline environment. The <a href="story.html">background story</a> stems from the effort to integrate OpenMapKit with Field Papers, and the result went a step further by also providing the OpenStreetMap software stack on our offline server.</p>
 <p>The four main components are <a href="../openmapkit">OpenMapKit</a>, <a href="software.html#field-papers">Field Papers</a>, the <a href="software.html#openstreetmap">OpenStreetMap</a> website, and <a href="software.html#posm-admin">POSM Admin</a>. The software itself is installed using <a href="software.html#posm-build">POSM Build</a>.</p>
 <p><img src="../images/posm/posm-portal.png" alt="POSM Portal"></p>
 <h2 id="workflow">Workflow</h2>
 <p>The high-level workflow for mapping with the POSM is as follows:</p>
 <ol>
-<li>Create an export of OSM PBF Source data along with scraped MBTiles base maps from the <a href="http://posm.io/" _target="blank">POSM OSM Export Tool</a>.</li>
+<li>Create an export of OSM PBF Source data along with scraped MBTiles base maps from the <a href="http://posm.io/" target="_blank">POSM OSM Export Tool</a>.</li>
 <li>Load the export onto the POSM with <a href="software.html#posm-admin">POSM Admin</a>.</li>
 <li>Create a <a href="software.html#field-papers">Field Papers</a> atlas of the area you want to survey.</li>
 <li>Check out a Field Papers deployment on OpenMapKit Android.</li>
 <li>Survey data on your phone and fill in the details on your field paper.</li>
 <li>Upload your survey data from your phone to OpenMapKit Server.</li>
 <li>Digitize your field paper sketches in the POSM iD Editor and validate your OpenMapKit uploads.</li>
-<li>Finally, use the <a href="https://github.com/mojodna/changeset-replay-tool" _target="blank">Changeset Replay Tool</a> to synchronize your POSM edits with the main OpenStreetMap.</li>
+<li>Finally, use the <a href="https://github.com/mojodna/changeset-replay-tool" target="_blank">Changeset Replay Tool</a> to synchronize your POSM edits with the main OpenStreetMap.</li>
 </ol>
 <h2 id="source-code">Source Code</h2>
-<p>POSM&apos;s source code consists of several repos on Github. The main POSM repo provides <a href="https://github.com/americanredcross/posm#project-related-repositories" _target="blank">links</a> to the individual components and modules used.</p>
-<p><a href="https://github.com/americanredcross/posm" _target="blank">https://github.com/americanredcross/posm</a></p>
+<p>POSM&apos;s source code consists of several repos on Github. The main POSM repo provides <a href="https://github.com/americanredcross/posm#project-related-repositories" target="_blank">links</a> to the individual components and modules used.</p>
+<p><a href="https://github.com/americanredcross/posm" target="_blank">https://github.com/americanredcross/posm</a></p>
 <p>An overview of the main components of POSM can be found in the <a href="software.html">POSM Software</a> page.</p>
 <h2 id="slides">Slides</h2>
-<p>In May of 2016, I had the good fortune to travel with the Red Cross to Ecuador to map Huaquillas using the POSM. <a href="http://stamen.com/about/who/seth-fitzsimmons/" _target="blank">Seth Fitzsimmons</a> from <a href="http://stamen.com" _target="blank">Stamen</a> and I presented on our trip at the <a href="http://cugos.org/2016-spring-fling/" _target="blank">2016 CUGOS Spring Fling</a>. The slides from are presentation are below:</p>
+<p>In May of 2016, I had the good fortune to travel with the Red Cross to Ecuador to map Huaquillas using the POSM. <a href="http://stamen.com/about/who/seth-fitzsimmons/" target="_blank">Seth Fitzsimmons</a> from <a href="http://stamen.com" target="_blank">Stamen</a> and I presented on our trip at the <a href="http://cugos.org/2016-spring-fling/" target="_blank">2016 CUGOS Spring Fling</a>. The slides from are presentation are below:</p>
 <iframe style="display: block;margin-left: auto;margin-right: auto;" src="//slides.com/nicholashallahan/posm-goes-to-ecuador/embed?style=light" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
 
 <h2 id="more-information">More Information</h2>
-<p>There is work-in-progress <a href="https://github.com/AmericanRedCross/posm/blob/master/docs.md" _target="blank">documentation</a> on the main POSM repo. Also, don&apos;t forget to check out the <a href="../openmapkit">OpenMapKit</a> page here at the Outpost.</p>
+<p>There is work-in-progress <a href="https://github.com/AmericanRedCross/posm/blob/master/docs.md" target="_blank">documentation</a> on the main POSM repo. Also, don&apos;t forget to check out the <a href="../openmapkit">OpenMapKit</a> page here at the Outpost.</p>
 
                                     
                                     </section>
@@ -535,7 +535,7 @@
 
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"POSM","level":"3.1","depth":1,"next":{"title":"The Story","level":"3.1.1","depth":2,"path":"posm/story.md","ref":"posm/story.md","articles":[]},"previous":{"title":"OpenMapKit Server","level":"2.1.2","depth":2,"path":"openmapkit/server.md","ref":"openmapkit/server.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchorjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"serif","size":2},"expandable-chapters":{},"anchorjs":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas Hallahan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"posm/index.md","mtime":"2016-07-22T14:38:15.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-11-05T02:59:40.537Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"POSM","level":"3.1","depth":1,"next":{"title":"The Story","level":"3.1.1","depth":2,"path":"posm/story.md","ref":"posm/story.md","articles":[]},"previous":{"title":"OpenMapKit Server","level":"2.1.2","depth":2,"path":"openmapkit/server.md","ref":"openmapkit/server.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchorjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"serif","size":2},"expandable-chapters":{},"anchorjs":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas Hallahan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"posm/index.md","mtime":"2016-07-22T14:38:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-30T19:57:26.920Z"},"basePath":"..","book":{"language":""}});
             mobileSidebarCloseFix();
             searchInputMobileFix();
         });
@@ -551,7 +551,7 @@
         
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js"></script>
         
     
         
@@ -579,7 +579,7 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

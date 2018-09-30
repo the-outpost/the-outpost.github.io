@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.0.3">
+        <meta name="generator" content="GitBook 3.2.3">
         <meta name="keywords" content="Nick Hallahan,maps,GIS,Android,POSM,OpenMapKit,map renderers,Tangram">
         <meta name="author" content="Nicholas Hallahan">
         
@@ -435,7 +435,7 @@
                                     
                                     <h1 style="color:#75A94F" id="openmapkit-server"><img style="max-height:55px;vertical-align:bottom;" src="../images/openmapkit/omk-icon-green.png" alt="OpenMapKit Icon">OpenMapKit Server</h1>
 
-<p><a class="github-button" href="https://github.com/AmericanRedCross/OpenMapKitServer" data-style="mega" data-count-href="/AmericanRedCross/OpenMapKitServer/stargazers" data-count-api="/repos/AmericanRedCross/OpenMapKitServer#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star AmericanRedCross/OpenMapKitServer on GitHub" _target="blank">Star</a></p>
+<p><a class="github-button" href="https://github.com/AmericanRedCross/OpenMapKitServer" data-style="mega" data-count-href="/AmericanRedCross/OpenMapKitServer/stargazers" data-count-api="/repos/AmericanRedCross/OpenMapKitServer#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star AmericanRedCross/OpenMapKitServer on GitHub" target="_blank">Star</a></p>
 <p>OpenMapKit Server is the lightweight NodeJS server component of OpenMapKit that handles the collection and aggregation of OpenStreetMap and OpenDataKit data. </p>
 <p><img src="../images/openmapkit/server-forms.png" alt="OpenMapKit Server Forms List"></p>
 <p>This software is intended to run both on low-power embedded Linux systems, as well as on higher powered, cloud-based servers. It handles the collection of OpenStreetMap data from ODK Collect and OpenMapKit Android, allowing you to download edits as well as submit them to POSM or OpenStreetMap. It is an OpenRosa complient ODK Aggregate server, and it supports all data types that can be submitted from ODK Collect. It is an alternative to ODK Aggregate and Formhub, though this is the only option that supports OpenStreetMap integration with ODK data.</p>
@@ -446,20 +446,20 @@
 <p>The data can be viewed or downloaded from the web application.</p>
 <p><img src="../images/openmapkit/download-csv.png" alt="Download CSV"></p>
 <h2 id="upload-xls-forms">Upload XLS Forms</h2>
-<p>The questions asked in an ODK survey are in XForm XML format. It is easier, however, to create a survey in Excel or LibreOffice as an <code>.xlsx</code> file. By following the specified format of an <a href="http://xlsform.org/" _target="blank">XLS Form</a>, you can upload a spreadsheet that defines a survey to OpenMapKit Server and have it converted to XForm XML automatically.</p>
+<p>The questions asked in an ODK survey are in XForm XML format. It is easier, however, to create a survey in Excel or LibreOffice as an <code>.xlsx</code> file. By following the specified format of an <a href="http://xlsform.org/" target="_blank">XLS Form</a>, you can upload a spreadsheet that defines a survey to OpenMapKit Server and have it converted to XForm XML automatically.</p>
 <p><img src="../images/openmapkit/upload-form.png" alt="Upload Form"></p>
 <h2 id="synchronize-osm-data">Synchronize OSM Data</h2>
-<p>As users submit their surveys from ODK Collect and OpenMapKit Android, OpenMapKit Server will automatically submit changesets of the incoming OSM data. Since OpenMapKit Android submits edits in <a href="http://wiki.openstreetmap.org/wiki/JOSM_file_format" _target="blank">JOSM OSM XML</a> format, it is a straightforward process to create changesets and submit to any OSM API, including <a href="../posm/">POSM</a>.</p>
+<p>As users submit their surveys from ODK Collect and OpenMapKit Android, OpenMapKit Server will automatically submit changesets of the incoming OSM data. Since OpenMapKit Android submits edits in <a href="http://wiki.openstreetmap.org/wiki/JOSM_file_format" target="_blank">JOSM OSM XML</a> format, it is a straightforward process to create changesets and submit to any OSM API, including <a href="../posm/">POSM</a>.</p>
 <p>You can also explicitly submit changesets, in case your OSM API was down, or you had to correct some data.</p>
 <p><img src="../images/openmapkit/submit-to-osm.png" alt="Submit to OSM Button"></p>
 <p>Once you have synchronized your OSM data, you can see your changeset metadata in OpenStreetMap. From OpenStreetMap, the metadata in your changeset refers back to the data URL in OpenMapKit Server.</p>
 <p><img src="../images/openmapkit/osm-changeset.png" alt="OSM Changeset"></p>
-<p>I have a more in-depth guide explaining the <a href="https://github.com/AmericanRedCross/OpenMapKitServer/blob/master/docs/submit-changesets.md" _target="blank">changeset submission workflow</a> on Github.</p>
+<p>I have a more in-depth guide explaining the <a href="https://github.com/AmericanRedCross/OpenMapKitServer/blob/master/docs/submit-changesets.md" target="_blank">changeset submission workflow</a> on Github.</p>
 <h2 id="download-osm-data">Download OSM Data</h2>
-<p>You can also take a more manual approach to synchronizing your OSM data. We also provide the ability to download the OSM data for the submissions in a form. This is in <a href="http://wiki.openstreetmap.org/wiki/JOSM_file_format" _target="blank">JOSM OSM XML</a> format, so you can simply open the data in JOSM and do as you please.</p>
+<p>You can also take a more manual approach to synchronizing your OSM data. We also provide the ability to download the OSM data for the submissions in a form. This is in <a href="http://wiki.openstreetmap.org/wiki/JOSM_file_format" target="_blank">JOSM OSM XML</a> format, so you can simply open the data in JOSM and do as you please.</p>
 <p><img src="../images/openmapkit/download-osm.png" alt="Download OSM"></p>
 <h2 id="more-information">More Information</h2>
-<p>More documentation is available on the <a href="https://github.com/AmericanRedCross/OpenMapKitServer/tree/master/docs" _target="blank">OpenMapKit Server Github repo</a>, as well as <a href="http://openmapkit.org" _target="blank">openmapkit.org</a>.</p>
+<p>More documentation is available on the <a href="https://github.com/AmericanRedCross/OpenMapKitServer/tree/master/docs" target="_blank">OpenMapKit Server Github repo</a>, as well as <a href="http://openmapkit.org" target="_blank">openmapkit.org</a>.</p>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
                                     
@@ -536,7 +536,7 @@
 
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OpenMapKit Server","level":"2.1.2","depth":2,"next":{"title":"POSM","level":"3.1","depth":1,"path":"posm/index.md","ref":"posm/index.md","articles":[{"title":"The Story","level":"3.1.1","depth":2,"path":"posm/story.md","ref":"posm/story.md","articles":[]},{"title":"Hardware","level":"3.1.2","depth":2,"path":"posm/hardware.md","ref":"posm/hardware.md","articles":[]},{"title":"Software","level":"3.1.3","depth":2,"path":"posm/software.md","ref":"posm/software.md","articles":[]}]},"previous":{"title":"OpenMapKit Android","level":"2.1.1","depth":2,"path":"openmapkit/android.md","ref":"openmapkit/android.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchorjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"serif","size":2},"expandable-chapters":{},"anchorjs":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas Hallahan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"openmapkit/server.md","mtime":"2016-07-22T14:36:55.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-11-05T02:59:40.537Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OpenMapKit Server","level":"2.1.2","depth":2,"next":{"title":"POSM","level":"3.1","depth":1,"path":"posm/index.md","ref":"posm/index.md","articles":[{"title":"The Story","level":"3.1.1","depth":2,"path":"posm/story.md","ref":"posm/story.md","articles":[]},{"title":"Hardware","level":"3.1.2","depth":2,"path":"posm/hardware.md","ref":"posm/hardware.md","articles":[]},{"title":"Software","level":"3.1.3","depth":2,"path":"posm/software.md","ref":"posm/software.md","articles":[]}]},"previous":{"title":"OpenMapKit Android","level":"2.1.1","depth":2,"path":"openmapkit/android.md","ref":"openmapkit/android.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchorjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"serif","size":2},"expandable-chapters":{},"anchorjs":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas Hallahan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"openmapkit/server.md","mtime":"2016-07-22T14:36:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-30T19:57:26.920Z"},"basePath":"..","book":{"language":""}});
             mobileSidebarCloseFix();
             searchInputMobileFix();
         });
@@ -552,7 +552,7 @@
         
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js"></script>
         
     
         
@@ -580,7 +580,7 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
